@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru-en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebGUI</title>
+  <link rel="icon" href="./img/icon.gif">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<nav class="nav">
+		<button class="nav-button" data-menu="home">HOME</button>
+		<button class="nav-button" data-menu="info">INFO</button>
+		<button class="nav-button" data-menu="project">PROJECT</button>
+	</nav>
+	<section class="win win-project"></section>
+	
+	<template id="home">
+		Тут пока ничего нет)
+	</template>
+	
+	<template id="info">
+		И тут тоже)
+	</template>
+	
+	<template id="project">
+		<div class="card" data-href="">
+			<img class="card-img card-img-default" src="./img/picture.svg">
+			<div class="card-text">
+				<a href="https://github.com/AntonMaklakov/Clickers15andmore">"Рефакторинг"</a> если это можно так назвать =)
+			</div>
+		</div>
+	</template>
+	
+	<script src="./main.js"></script>
+</body>
+</html>
