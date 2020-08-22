@@ -1,0 +1,117 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	color: #eeeeee;
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	background: url(./img/wallpaper.jpg);
+	background-size: cover;
+}
+
+.nav {
+	display: flex;
+	flex-flow: row;
+	background: #222222;
+}
+.nav-button {
+	color: #eeeeee;
+	outline: none;
+	padding: 10px;
+	padding-bottom: 8px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom-color 300ms ease-in-out;
+} .nav-button:hover {
+	border-bottom-color: #ffffff;
+}
+
+.win-home {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	padding: 10px;
+	margin: 10px auto;
+	font-size: 3vmax;
+	width: 90vw;
+	min-height: 80vh;
+	border-radius: 5px;
+	animation: def 500ms linear forwards;
+} .win-home:hover {
+	animation: run 300ms linear forwards;
+}
+.win-info {
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	padding: 10px;
+	margin: 10px auto;
+	font-size: 3vmax;
+	width: 90vw;
+	min-height: 80vh;
+	border-radius: 5px;
+	animation: def 500ms linear forwards;
+} .win-info:hover {
+	animation: run 300ms linear forwards;
+}
+.win-project {
+	display: grid;
+	grid-gap: 20px;
+	padding: 5px;
+}
+
+a {
+	color: #aaaa44;
+	text-decoration: none;
+} a:hover {
+	color: #eeee33;
+	text-decoration: solid underline;
+}
+
+.card {
+	display: grid;
+	padding: 10px;
+	border-radius: 5px;
+	background: #222222;
+	border: 1px solid transparent;
+	transition: all 200ms ease;
+} .card:hover {
+	border-color: #eeeeee;
+	transform: translate(-1px, -1px);
+	box-shadow: 5px 5px 5px #002233;
+}
+.card-img {
+	max-width: 100%;
+}
+.card-img-default {
+	width: 30%;
+}
+.card-text {
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 5px;
+}
+
+.card-text > a {
+	color: #aaaa44;
+	text-decoration: none;
+} .card-text > a:hover {
+	color: #eeee33;
+	text-decoration: solid underline;
+}
+
+
+@keyframes def {
+	0% {box-shadow: 0px 0px 20px #000000;}
+	100% {box-shadow: none;}
+}
+
+@keyframes run {
+	0% {background: transparent;}
+	100% {
+		box-shadow: 0px 0px 10px #000000cc;
+		background: #222222cc;
+	}
+}
+

@@ -1,0 +1,85 @@
+body {
+	color: #111111;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #333333;
+}
+
+.upgrade {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.clicker {
+	padding: 10px;
+    background: #22aa22;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+}
+.menu {
+    background: #22aa22;
+}
+
+.hidden {
+    display: none;
+}
+
+.grey {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: 8;
+    background-color: black;
+}
+
+.popup {
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    width: 200px;
+    height: 100px;
+    color: red;
+    opacity: 1;
+    z-index: 9;
+    background: #33333388;
+}
+
+.upgradesTextColor {
+    color: white;
+}
+
+button {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+	background: #aaeeaa;
+	border: none;
+	transition: background 200ms ease;
+} button:hover {
+	background: #337733;
+}
+
+.clickPlusBtn {
+	border-radius: 10px;
+	background: #ee2222;
+} .clickPlusBtn:hover {
+	background: #ee0000;
+} .clickPlusBtn:active {
+	background: #aa0000;
+}
+
+.stat-el {
+	padding: 5px;
+	margin: 5px;
+	border-radius: 5px;
+	background: #aaaaaa77;
+}

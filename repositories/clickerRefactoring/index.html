@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<title>Кликер</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div class="popup-wrapper hidden">
+		<div class="grey"></div>
+		<div class="popup"></div>
+	</div>
+	
+	<div class="game">
+		<div class="menu">
+			<div class="mainMenu">
+				<button class="statBtn">Статистика</button>
+				<button class="shopBtn">Открыть магазин</button>
+				<button class="settingsBtn">Настройки</button>
+			</div>
+			
+			<div class="statMenu hidden">
+				<div class="stat-el statMenu-text">Кликов за все время зделано: </div>
+				<div class="stat-el statMenu-upgradesInfo">Апградов на клики: </div>
+				<div class="stat-el statMenu-upgradesMinInfo">Апградов на клики в минуту: </div>
+			</div>
+			
+			<div class="shopMenu hidden">
+				<button class="upgradesBtn">Апгрейды кликов</button>
+				<button class="upgradesMinBtn">Апгрейды кликов в минуту</button>
+			</div>
+			
+			<div class="upgradesMenu hidden">
+				<button class="upgrade">Купить апгрейд 1lvl(-10 кликов)(+1клик)</button>
+				<button class="upgrade">Купить апгрейд 2lvl(-20 кликов)(+2клик)</button>
+				<button class="upgrade">Купить апгрейд 3lvl(-30 кликов)(+3клик)</button>
+				<button class="upgrade">Купить апгрейд 4lvl(-40 кликов)(+4клик)</button>
+				<button class="upgrade">Купить апгрейд 5lvl(-50 кликов)(+5клик)</button>
+			</div>
+			
+			<div class="upgradesMinMenu hidden">
+				<button class="upgradeMin">Купить кликов в минуту(+1клик)(-10 кликов)</button>
+				<button class="upgradeMin">Купить кликов в минуту(+2клик)(-20 кликов)</button>
+				<button class="upgradeMin">Купить кликов в минуту(+3клик)(-30 кликов)</button>
+				<button class="upgradeMin">Купить кликов в минуту(+4клик)(-40 кликов)</button>
+				<button class="upgradeMin">Купить кликов в минуту(+5клик)(-50 кликов)</button>
+			</div>
+			
+			<div class="settingsMenu hidden">
+				<button class="fontChange">Именить шрифт</button>
+				<label for="colorPicker">Выбрать цвет интерфейса:</label>
+				<input type="color" id="colorPicker" value="#22aa22">
+			</div>
+			
+			<button class="back hidden">Назад</button>
+		</div>
+		
+		<div class="clicker">
+			<h1 class="countClick-text">Кликов сделано:0</h1>
+			<p class="countClickAdd-text">Кликов за нажатие:1</p>
+			<p class="clickPerMinute-text">Кликов в минуту:1</p>
+			<button class="clickPlusBtn">Click!</button>
+		</div>
+	</div>
+
+	<script src="./script.js"></script>
+</div>
+</body>
+</html>
