@@ -115,3 +115,12 @@ a {
 	}
 }
 
+
+.list .item-list:not(:last-child) {
+	border-bottom: 1px solid #33ffcc88;
+}
+
+.item-list {
+	padding: 5px;
+}
+
